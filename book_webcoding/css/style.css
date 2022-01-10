@@ -1,0 +1,541 @@
+@charset "utf-8";
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+body{
+  min-width: 320px;
+}
+img{
+  border: 0;
+}
+ul, ol{
+  list-style: none;
+}
+em, address{
+  font-style: normal;
+}
+a{
+  text-decoration: none;
+}
+a:hover,
+a:active,
+a:focus{
+  text-decoration: none;
+}
+
+
+#viewType,#myname{
+  display: none;
+}
+#loginform{
+  _display: none;
+}
+
+
+#signup{
+  display:none
+}
+#introsite {
+  _display:none
+}
+
+
+/* 공통 소스 */
+header{
+  clear: both;
+  float: left;
+  width: 100%;
+  background: rgba(85, 191 , 247, 0.7);
+}
+#loginform form{
+  float: left;
+  width: 100%;
+}
+#viewtype {
+  clear: both;
+  width: 100px;
+  height: 25px;
+  margin: 0 auto;
+  border-left: 1px solid #ccc;
+  border-right:1px solid #ccc;
+}
+#melink{
+  float: left;
+  width:50%;
+  height: 17px;
+  border-right: 1px solid #ccc;
+  text-align:center;
+  padding:8px 0 0 0;
+  color :#aaa
+}
+#alllink{
+  float: left;
+  width:49%;
+  height: 17px;
+  text-align: center;
+  padding: 8px 0 0 0;
+  color:#aaa
+}
+#sitecomment{
+  border: 3px solid #64cbf9;
+  padding:1rem;
+  font-size:2rem;
+  color:#64cbf9;
+}
+
+footer{
+  clear: both;
+  float: left;
+  width: 100%;
+  height: 2em;
+  padding-top: 1em;
+  background:#fff;
+  text-align:center;
+  font-size:2em;
+  border-top:1px solid #ccc;
+}
+footer p{
+  float: left;
+  width: 100%;
+  font-size: 1em;
+}
+
+
+
+
+
+
+
+  #signupcenter{
+    margin:0 auto
+  }
+  #signupform{
+    float:left;
+    width:98%;
+    margin:40px 0 40px 0;
+    padding-top:1rem;
+    border:1px solid #ccc;
+    border-radius: 10px;
+  }
+  .row{
+    clear:both;
+    float: left;
+    width: 100%;
+    margin-bottom: 1.5em
+  }
+  .row label{
+    float:left;
+    width:20%;
+    padding-left:5%;
+    font-size:1.3rem;
+  }
+  .inputbox{
+    float:left;
+    width:90%;
+    background:#fff;
+    margin-left:1rem;
+    border: 1px solid #ccc
+  }
+  .row input{
+    float:left;
+    width:98%;
+    font-size: 1.5rem;
+    margin-left:2%;
+    background:#fff ;
+    border:none
+  }
+  .row .selectbox{
+    float:left;
+    width:21%;
+    border:1px solid #ccc;
+    background:#fff;
+    margin-top:3px
+  }
+  .row .selectbox select{
+    float:left;
+    background:#fff url('./images/index/selectTagBg.png');
+    border:none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-size: 10px;
+    background-repeat:no-repeat;
+    background-position:  90% 5px;
+    width:90%;
+    margin-left:5px;
+    font-size: 1rem;
+  }
+  #birthyear{
+    font-size: 1rem;
+  }
+  .selectboxmargin{
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .genderrow input{
+    width: 15px;
+    margin-left:10%;
+    position:relative;
+    top: 4px;
+  }
+  #genderlabel{
+    clear:both;
+    width:80%;
+    margin:0 auto;
+  }
+  #gmm{
+    border-left:none;
+  }
+  .genderrow label{
+    float:left;
+    width:49%;
+    border:1px solid #ccc;
+    text-align:center;
+    padding-left:0;
+    }
+  .genderrow input{
+    clear:both;
+    float:none;
+    width:0px;
+    visibility:hidden;
+  }
+  #valueerror{
+    float: left;
+    width: 100%;
+    text-align:center;
+    color: red;
+    font-size: 2em;
+  }
+  #sitecomment{
+    border:3px solid #64cbf9;
+    padding:1rem;
+    font-size:2rem;
+    color:#64cbf9;
+  }
+  .submitbox{
+    clear:both;
+    float: left;
+    width:25%;
+    padding: 0.4rem;
+    background:#64cbf9;
+    margin-left: 5%;
+    border-radius: 10px
+  }
+  #signupsubmit{
+    float: left;
+    width: 100%;
+    background: none;
+    color:#fff ;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:0px) and (max-width:1199px){
+  #myservice {
+    float: left;
+    color: #fff ;
+    width: 100%;
+    font-size: 2rem;
+    text-align: center ;
+    margin-bottom: 1rem;
+  }
+  #loginform{
+    clear: both;
+  }
+  #loginemailarea,
+  #loginpwarea{
+    clear: both;
+    float: left;
+    width: 100%;
+  }
+  #loginpwarea{
+    margin-top: 0.4rem;
+  }
+  .logininputbox{
+    float: left;
+    width: 59%;
+    border: 1px solid #ccc;
+    background: #fff;
+  }
+  #loginemailarea label, #loginpwarea label{
+    float: left;
+    width: 25%;
+    padding-left:1rem ;
+    font-size: 1.5rem;
+    color: #fff;
+  }
+  .loginsubmitbox{
+    clear: both;
+    float: left;
+    background: #fff;
+    border: 1px solid #ccc;
+    margin: 0.5rem 0 1rem 2rem;
+    padding: 0.3rem;
+  }
+  #loginsubmit{
+    clear: both;
+    float: left;
+    width: 100%;
+    background: none;
+    border: none;
+    color: #000;
+    font-size: 1rem;
+  }
+  #myname{
+    float: left;
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    padding: 0.3rem 0 0.3rem 0;
+  }
+  #myname p{
+    float: left;
+    margin-left:2% ;
+    font-size: 1rem;
+  }
+  #logoutbox{
+    float: right;
+    margin-right: 5%;
+    border: 1px solid #ccc;
+    margin-top: 1px;
+  }
+  #logoutbox input{
+    border :none;
+    background :none;
+    padding : 0.1rem 0.3rem;
+    margin-top: 1px;
+    cursor:pointer;
+    font-size: O.5rem
+  }
+  #gotologinbtn{
+    clear:both;
+    width: 30%;
+    height:30px;
+    padding: 0.4rem;
+    margin: 0 auto 20px;
+    background:#64cbf9;
+    cursor: pointer;
+    text-align:center;
+    border-radius: 10px;
+  }
+  #gotologinbtn p{
+    font-size: 1rem;
+    color: #fff;
+    position:relative;
+    top: 5px;
+  }
+}
+
+
+
+@media screen and(min-width:1200px){
+  #myservice{
+    float:left ;
+    color:#fff;
+    font-size:2rem;
+    text-align:left;
+    margin:10px
+  }
+
+
+  #myname {
+    float: right;
+    color:#fff;
+    margin-right:1%;
+    margin-top: 20px
+  }
+  #myName p{
+    float: left;
+    width: 250px;
+    font-size: 1rem
+  }
+  #logoutbox{
+    float:left;
+    border: 1px solid #ccc;
+    margin: top 1px;
+  }
+  #logoutbox input{
+    border:none;
+    background: none;
+    padding: 0.1rem 0.3rem;
+    margin-top: 1px;
+    cursor: pointer;
+    font-size: 0.5rem;
+    background:#fff
+  }
+  #loginForm{
+    float:right;
+    margin: 20px 5px 0 0
+  }#loginemailarea, #loginpwarea{
+    float: left
+  }
+  #loginemailarea label,
+  #loginpwarea label{
+    float: left;
+    padding-left: 1rem;
+    font-size: 1.3em;
+    color:#fff;
+    margin-right : 5px
+  }
+  .logininputbox{
+    float: left;
+    border: 1px solid #ccc;
+    background: #fff;
+  }
+  #loginemailarea input,
+  #loginpwarea input{
+    float:left;
+    padding-left:0.5rem;
+    font-size: 1.3em;
+    border:none;
+    background:#fff
+  }
+.loginsubmitbox{
+  float:right;
+  width:50px;
+  background:#fff ;
+  border : 1px solid #ccc;
+  margin-left:5px;
+  padding:0.1em
+}
+  #loginsubmit {
+    clear:both;
+    float: left;
+    width: 100%;
+    background: none;
+    border:none;
+    color:#aaa;
+    font-size: 0.7rem
+  }
+  #loginform{
+    display: block;
+  }
+  #container{
+    float: left;
+    width:100%;
+    min-height: 100%;
+    background:url('./images/index/bgimage.jpg');
+    background-size: cover;
+  }
+  #sitecomment {
+    margin: 2% auto 0;
+    width: 210px ;
+    background: rgba(255, 255, 255, 0.4 );
+  }
+  #introsite{
+    display:block;
+  }
+  #signupbtn,
+  #gotologinbtn{
+    display: none;
+  }
+  #signup{
+    display: block;
+    margin-top: 1%;
+    margin-bottom:5%;
+  }
+  #signupcenter{
+    width: 50%;
+  }
+  #signupform{
+    background: rgba(255, 255, 255, 0.8);
+  }
+  .inputbox{
+    height: 40px;
+  }
+  .row input{
+    height:40px;
+  }
+  .submitbox{
+    width: 10%;
+    padding:0.2rem;
+  }
+}
+
+
+@media screen and (max-width:366px){
+  #myservice {
+    font-size: 1.5rem
+  }
+  #loginemailarea label,
+  #oginpwarea label{
+    font-size:1rem
+  }
+  #loginemailarea input,
+  #loginpwarea input{
+    font: size 1rem;
+  }
+  .loginsubmitbox{
+    padding: 0.2rem
+  }
+  #loginsubmit{
+    font-size: 1rem
+  }
+}
+
+
+
+@media screen and (min-width:367px) and (max-width:458px){
+  #myService{
+    font-size: 1. 7rem
+  }
+  #loginemailarea label,
+  #loginpwarea label{
+    font-size: 1.2rem
+  }
+  #loginemailarea input,
+  #loginPpwarea input{
+    font-size:1.2rem
+  }
+  .loginsubmitbox{
+    padding: 0.2rem
+  }
+  #loginsubmit{
+    font-size: 1rem
+  }
+}
+
+
+
+
+@media screen and (min-width:0px) and (max-width:1199px){
+  body{
+    background:#fff
+  }
+  #signupcenter{
+    width:80%
+  }
+  #introsite {
+    clear:both;
+    float: left;
+    width: 100%
+  }
+  #sitecomment{
+    margin: 10% auto;
+    width:65%;
+    color:#64cbf9
+  }
+  #signupbtn{
+    margin: 10% auto 15%;
+    width: 100px;
+    height: 30px;
+    background:#64cbf9;
+    text-align:center;
+    padding-top: 1em;
+    border-radius:1rem
+  }
+  #signupbtn p{
+    font-size:1rem;
+    color:#fff;
+  }
+}
