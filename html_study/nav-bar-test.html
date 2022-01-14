@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,39 +10,62 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="content">
-      <div class="top-area">
-        <div class="icon-area">
-          <div class="icon deactive" onclick="active(this)"><ion-icon name="chatbox-outline"></ion-icon></div>
-          <div class="icon deactive" onclick="active(this)"><ion-icon name="chatbox-ellipses-outline"></ion-icon></div>
-          <div class="icon deactive" onclick="active(this)"><ion-icon name="chatbubble-outline"></ion-icon></div>
-          <div class="icon deactive" onclick="active(this)"><ion-icon name="chatbubble-ellipses-outline"></ion-icon></div>
-          <div class="icon deactive" onclick="active(this)"><ion-icon name="chatbubbles-outline"></ion-icon></div>
+        <div class="top-area">
+            <div class="icon-area">
+                <div class="icon deactive" onclick="active(this)">
+                    <ion-icon name="chatbox-outline"></ion-icon>
+                </div>
+                <div class="icon deactive" onclick="active(this)">
+                    <ion-icon name="chatbox-ellipses-outline"></ion-icon>
+                </div>
+                <div class="icon deactive" onclick="active(this)">
+                    <ion-icon name="chatbubble-outline"></ion-icon>
+                </div>
+                <div class="icon deactive" onclick="active(this)">
+                    <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                </div>
+                <div class="icon deactive" onclick="active(this)">
+                    <ion-icon name="chatbubbles-outline"></ion-icon>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="content-area">
-        s<br />
-        s<br />
-      </div>
-      <div class="nav-area">
-        <div class="icon-area">
-          <div class="icon deactive" onclick="active(this)"><ion-icon name="chatbox-outline"></ion-icon></div>
-          <div class="icon deactive" onclick="active(this)"><ion-icon name="chatbox-ellipses-outline"></ion-icon></div>
-          <div class="icon active" onclick="active(this)"><ion-icon name="add-circle"></ion-icon></div>
-          <div class="icon deactive" onclick="active(this)"><ion-icon name="chatbubble-ellipses-outline"></ion-icon></div>
-          <div class="icon deactive" onclick="active(this)"><ion-icon name="chatbubbles-outline"></ion-icon></div>
+        <div class="content-area">
+            s<br />
+            s<br />
+            <img src="./icon_test1.html" srcset="">
         </div>
-      </div>
+        <div class="nav-area">
+            <div class="icon-area">
+                <div class="icon deactive" onclick="active(this)">
+                    <ion-icon name="chatbox-outline"></ion-icon>
+                </div>
+                <div class="icon deactive" onclick="active(this)">
+                    <ion-icon name="chatbox-ellipses-outline"></ion-icon>
+                </div>
+                <div class="icon active" onclick="active(this)">
+                    <ion-icon name="add-circle"></ion-icon>
+                </div>
+                <div class="icon deactive" onclick="active(this)">
+                    <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                </div>
+                <div class="icon deactive" onclick="active(this)">
+                    <ion-icon name="chatbubbles-outline"></ion-icon>
+                </div>
+            </div>
+        </div>
     </div>
-  </body>
-  <script>
+</body>
+<script>
     function active(e) {
-      $(".icon").removeClass("active");
-      $(".icon").addClass("deactive");
-      $(e).removeClass("deactive");
-      $(e).addClass("active");
+        $(".icon").removeClass("active");
+        $(".icon").addClass("deactive");
+        $(e).removeClass("deactive");
+        $(e).addClass("active");
     }
-  </script>
+</script>
+
 </html>
