@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import Subject from "./comppnents/Subject";
+import TOC from "./comppnents/TOC";
+import Content from "./comppnents/Content";
 
-function App() {
-    return (
-        <div className="App">
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <p>
-                    Edit <code>src/App.js</code> and save to reload.
-                </p>
-                <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-                </a>
-            </header>
-        </div>
-    );
+class App extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            subject: { title: 'web', sub: 'world wide web!' },
+            contents: [
+                { id: 1, title: "html", desc: "html desc" },
+                { id: 2, title: "css", desc: "css desc" },
+                { id: 3, title: "javascript", desc: "javascript desc" },
+
+            ]
+        }
+    }
+    render() {
+        return (
+            <div className='App'>
+                <Subject
+                    title={this.state.subject.title}
+                    sub={this.state.subject.sub}>
+                </Subject>
+                <TOC
+                    data={this.state.contents}></TOC>
+                <Content></Content>
+                <a href='/'>상위</a>
+            </div>
+        );
+    }
 }
 
 export default App;
