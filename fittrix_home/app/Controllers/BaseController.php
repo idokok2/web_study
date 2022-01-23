@@ -23,23 +23,23 @@ use Psr\Log\LoggerInterface;
 
 class BaseController extends Controller
 {
-	/**
-	 * Instance of the main Request object.
-	 *
-	 * @var IncomingRequest|CLIRequest
-	 */
-	protected $request;
+    /**
+     * Instance of the main Request object.
+     *
+     * @var IncomingRequest|CLIRequest
+     */
+    protected $request;
 
-	/**
-	 * An array of helpers to be loaded automatically upon
-	 * class instantiation. These helpers will be available
-	 * to all other controllers that extend BaseController.
-	 *
-	 * @var array
-	 */
-	protected $helpers = ['cookie', 'functional'];
+    /**
+     * An array of helpers to be loaded automatically upon
+     * class instantiation. These helpers will be available
+     * to all other controllers that extend BaseController.
+     *
+     * @var array
+     */
+    protected $helpers = ['cookie', 'functional'];
 
-	protected $menuList = [
+    protected $menuList = [
         'kor'   => [
             [
                 'path'      => '/about',
@@ -85,7 +85,7 @@ class BaseController extends Controller
                 'path'      => '/contact',
                 'name'      => '문의하기',
                 'children'  => [],
-            ]
+            ],
             /* [
                 'path'      => '/event',
                 'name'      => '이벤트',
@@ -139,7 +139,7 @@ class BaseController extends Controller
                 'children'  => ['/reservation/confirm'],
             ], */
         ],
-	];
+    ];
 
     private $adminMenu = [
         [
@@ -238,22 +238,22 @@ class BaseController extends Controller
     protected $lang;
     protected $session;
 
-	/**
-	 * Constructor.
-	 *
-	 * @param RequestInterface  $request
-	 * @param ResponseInterface $response
-	 * @param LoggerInterface   $logger
-	 */
-	public function initController(RequestInterface $request, ResponseInterface $response, LoggerInterface $logger)
-	{
-		// Do Not Edit This Line
-		parent::initController($request, $response, $logger);
+    /**
+     * Constructor.
+     *
+     * @param RequestInterface  $request
+     * @param ResponseInterface $response
+     * @param LoggerInterface   $logger
+     */
+    public function initController(RequestInterface $request, ResponseInterface $response, LoggerInterface $logger)
+    {
+        // Do Not Edit This Line
+        parent::initController($request, $response, $logger);
 
-		//--------------------------------------------------------------------
-		// Preload any models, libraries, etc, here.
-		//--------------------------------------------------------------------
-		// E.g.: $this->session = \Config\Services::session();
+        //--------------------------------------------------------------------
+        // Preload any models, libraries, etc, here.
+        //--------------------------------------------------------------------
+        // E.g.: $this->session = \Config\Services::session();
 
         $view = \Config\Services::renderer();
         date_default_timezone_set('Asia/Seoul');
@@ -273,7 +273,7 @@ class BaseController extends Controller
             $uri = array_slice($uri, 0, 2);
         }
         $view->setVar('uri_string', '/' . implode('/', $uri));
-	}
+    }
 
     protected function adminInit()
     {

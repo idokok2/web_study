@@ -74,4 +74,8 @@ class Main extends BaseController
     {
         return view($this->lang .  '/main/media');
     }
+    public function videoplayer()
+    {
+        return view($this->lang .  '/main/videoplayer');
+    }
 }
